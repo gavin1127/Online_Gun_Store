@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p th:text="${longguns}">stuff</p>
+    <tr th:each="longgun : ${gun}" class="product" > guns go here
+    <td th:text="${longgun.getName()}">AK</td>
+    <td th:text="${longgun.getPrice()}">7.62x39</td>
+    </tr>
+    </div>
+</body>
+</html>
